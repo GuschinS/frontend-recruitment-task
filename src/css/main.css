@@ -90,3 +90,47 @@ button {
     position:relative;
     left: 775px;
 }
+
+@media screen and (max-width: 1440px) and ( min-width: 930px ) {
+    section {
+        width: 80%;
+        height: 100%;
+    }
+
+    .img-hero, .content {
+        width: 50%;
+        height: 50%;
+        margin: 8% 0 0 4%;
+    }
+}
+
+@media screen and (max-width: 929px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .img-hero,
+    .content {
+        position: relative;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        margin: 3% auto;
+    }
+
+    .alert-body {
+        width: 97%;
+        top: 40%
+    }
+
+    .alert-content {
+        margin-left: 7%;
+    }
+
+    .reset {
+        left: 10%;
+    }
+}
