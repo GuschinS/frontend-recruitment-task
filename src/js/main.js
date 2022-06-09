@@ -24,3 +24,31 @@ const alert = () => {
 }
 
 alert()
+
+const resetButton = document.querySelector('.reset')
+const addButton = () => {
+    resetButton.style.display = 'flex';
+}
+const remButton = () => {
+    resetButton.style.display = '';
+}
+let counterVal = sessionStorage.getItem("val") || 0;
+
+const incrementClick = () => {
+    if (counterVal >= 4) {
+        addButton();
+    }
+    updateDisplay(++counterVal);
+
+}
+
+const resetCounter = () => {
+    counterVal = 0;
+    updateDisplay(counterVal);
+    remButton();
+}
+
+const updateDisplay = (val) => {
+    document.getElementById("counter-label").innerHTML = val;
+    sessionStorage.setItem("val", val);
+}
