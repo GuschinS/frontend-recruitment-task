@@ -52,3 +52,13 @@ const updateDisplay = (val) => {
     document.getElementById("counter-label").innerHTML = val;
     sessionStorage.setItem("val", val);
 }
+
+async function getTable() {
+    const url = `https://jsonplaceholder.typicode.com/users`;
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log('data: ', data[0]);
+
+}
+
+getTable()
