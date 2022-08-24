@@ -4,10 +4,6 @@ h1 {
   line-height: 120%;
 }
 
-.dark {
-  color: #121212;
-}
-
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -32,6 +28,7 @@ section {
   width: 380px;
   height: 250px;
   margin-top: 136px;
+  color: #121212;
 }
 
 .copy {
@@ -64,9 +61,10 @@ button {
 
 .alert-body {
   position: relative;
-  top: 375px;
-  width: 920px;
-  height: 210px;
+  top: 140px;
+  width: 1060px;
+  height: 520px;
+  padding: 10px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -75,22 +73,75 @@ button {
   width: 380px;
   height: 98px;
   margin-left: 95px;
-  margin-top: 56px;
+  margin-top: 20px;
 }
 
 .alert-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 25px;
+  right: 25px;
   cursor: pointer;
 }
 
 .reset {
-  display: none;
+  opacity: 0;
   position: relative;
-  left: 775px;
+  left: 833px;
+  bottom: 60px;
+  cursor: default;
 }
 
+table {
+  opacity: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #121212;
+  border-style: solid;
+  color: #121212;
+}
+table td, table th {
+  border-width: 2px;
+  border-color: #121212;
+  border-style: solid;
+  padding: 5px;
+}
+table thead {
+  background-color: #E4C1AE;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  border: 8px solid rgba(0, 0, 0, 0.3137254902);
+  border-top: 8px solid #E4C1AE;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 1440px) and (min-width: 930px) {
   section {
     width: 80%;
