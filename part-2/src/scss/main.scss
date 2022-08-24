@@ -1,5 +1,6 @@
 $color-white: #FFFFFF;
 $color-dark: #121212;
+$color-button: #E4C1AE;
 
 @mixin font {
     font-family: 'Roboto';
@@ -50,7 +51,7 @@ section {
 button {
     width: 128px;
     height: 48px;
-    background: #E4C1AE;
+    background: $color-button;
     color: $color-white;
     border-radius: 32px;
     border: none;
@@ -72,9 +73,10 @@ button {
 
 .alert-body {
     position: relative;
-    top: 375px;
-    width: 920px;
-    height: 210px;
+    top: 140px;
+    width: 1060px;
+    height: 520px;
+    padding: 10px;
     margin: 0 auto;
     background-color: $color-white;
 }
@@ -83,20 +85,45 @@ button {
     width: 380px;
     height: 98px;
     margin-left: 95px;
-    margin-top: 56px;
+    margin-top: 20px;
 }
 
 .alert-close {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 25px;
+    right: 25px;
     cursor: pointer;
 }
 
 .reset {
-    display: none;
+    // display: none;
+    opacity: 0;
     position:relative;
-    left: 775px;
+    left: 833px;
+    bottom: 60px;
+    cursor: default;
+}
+
+table {
+    width: 100%;
+    background-color: $color-white;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: $color-dark;
+    border-style: solid;
+    color: $color-dark;
+  
+  
+  & td, th {
+    border-width: 2px;
+    border-color: $color-dark;
+    border-style: solid;
+    padding: 5px;
+  }
+  
+  & thead {
+    background-color: $color-button;
+  }
 }
 
 @media screen and (max-width: 1440px) and ( min-width: 930px ) {
