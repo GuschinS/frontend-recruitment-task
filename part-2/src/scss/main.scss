@@ -8,15 +8,10 @@ $color-gray: #00000050;
     font-style: normal;
 }
 
-
 h1 {
     margin: 0;
     font-size: 42px;
     line-height: 120%;
-}
-
-.dark {
-    color: $color-dark
 }
 
 body {
@@ -42,6 +37,7 @@ section {
     width: 380px;
     height: 250px;
     margin-top: 136px;
+    color: $color-dark
 }
 
 .copy {
@@ -97,7 +93,6 @@ button {
 }
 
 .reset {
-    // display: none;
     opacity: 0;
     position:relative;
     left: 833px;

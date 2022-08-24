@@ -57,8 +57,8 @@ const updateDisplay = (val) => {
     sessionStorage.setItem("val", val);
 }
 
-try {
-    async function getTable() {
+async function getTable() {
+    try {
         const url = `https://jsonplaceholder.typicode.com/users`;
         const res = await fetch(url);
         const data = await res.json();
@@ -107,20 +107,18 @@ try {
             table.appendChild(tbody)
         }
         createTable()
+    } catch {
+        console.error();
     }
-    getTable()
-
-} catch {
-    console.log("error")
 }
-
+getTable()
 
 let timeLoader
 const loader = () => {
     timeLoader = setTimeout(showPage, 3000);
-  }
-  
+}
+
 const showPage = () => {
     document.querySelector('.loader').style.display = "none";
     document.querySelector('table').style.opacity = '1';
-  }
+}

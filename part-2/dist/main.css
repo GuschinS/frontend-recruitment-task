@@ -4,10 +4,6 @@ h1 {
   line-height: 120%;
 }
 
-.dark {
-  color: #121212;
-}
-
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -32,6 +28,7 @@ section {
   width: 380px;
   height: 250px;
   margin-top: 136px;
+  color: #121212;
 }
 
 .copy {
