@@ -5,10 +5,13 @@ const alert = () => {
 
     const openAlert = () => {
         alertModal.style.display = 'flex'
+        loader()
     }
 
     const closeAlert = () => {
         alertModal.style.display = ''
+        document.querySelector('.loader').style.display = 'block';
+        document.querySelector('table').style.opacity = '0';
     }
 
     alertBtn.addEventListener('click', openAlert)
@@ -110,3 +113,14 @@ try {
 } catch {
     console.log("error")
 }
+
+
+let timeLoader
+const loader = () => {
+    timeLoader = setTimeout(showPage, 3000);
+  }
+  
+const showPage = () => {
+    document.querySelector('.loader').style.display = "none";
+    document.querySelector('table').style.opacity = '1';
+  }
