@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sergei Gushchin - Recruitment task</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!-- <script src="./src/js/main.js" defer></script> -->
+    <script src="./dist/all.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+</head>
+<body>
+    <section>
+        <img
+        srcset="
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_450.jpg 450w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_630.jpg 630w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_767.jpg 767w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg 538w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_16_9,c_fill,g_auto__c_scale,w_596.jpg 596w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_694.jpg 694w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_16_9,c_fill,g_auto__c_scale,w_720.jpg 720w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg 480w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg 784w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1002.jpg 1002w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1234.jpg 1234w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1394.jpg 1394w,
+          ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg 1400w
+        "
+        sizes="(max-width: 320px) 280px,
+                (max-width: 480px) 440px,
+                800px"
+        src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg"
+        alt="image" class="img-hero">
+        <div class="content">
+            <h1 class="title dark">Lorem, ipsum.</h1>
+            <p class="copy dark">Infinitely scalable, feature-rich and cloud-native data management and protection for
+                modern
+                and
+                legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
+            <button type="button" id="alert" onclick="incrementClick()">Button</button>
+        </div>
+        <div class="alert">
+            <div class="alert-body">
+                <div class="alert-content">
+                    <h1>Alert!</h1>
+                    <p>You have clicked <strong id="counter-label">0</strong><strong> times</strong> to related button.</p>
+                </div>
+                <div class="alert-close">
+                    <svg width="24" height="24" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 20L1 1M1 20L20 1" stroke="black"></path></svg>
+                </div>
+                <button class="reset" onclick="resetCounter()">Reset</button>
+            </div>
+        </div>
+    </section>
+</body>

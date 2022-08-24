@@ -1,0 +1,144 @@
+$color-white: #FFFFFF;
+$color-dark: #121212;
+
+@mixin font {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.dark {
+    color: $color-dark
+}
+
+body {
+    @include font;
+    background: $color-white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;   
+    width: 1440px;
+    height: 960px;
+    margin: 0 auto;
+}
+
+.img-hero {
+    width: 505px;
+    height: 330px;
+    margin: 96px 95px 0 230px;
+}
+
+.content {
+    width: 380px;
+    height: 250px;
+    margin-top: 136px;
+}
+
+.copy {
+    margin: 24px 0 32px 0;
+    line-height: 24px;
+}
+
+button {
+    width: 128px;
+    height: 48px;
+    background: #E4C1AE;
+    color: $color-white;
+    border-radius: 32px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 40px;
+    cursor: pointer;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000050;
+}
+
+.alert-body {
+    position: relative;
+    top: 375px;
+    width: 920px;
+    height: 210px;
+    margin: 0 auto;
+    background-color: $color-white;
+}
+
+.alert-content {
+    width: 380px;
+    height: 98px;
+    margin-left: 95px;
+    margin-top: 56px;
+}
+
+.alert-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.reset {
+    display: none;
+    position:relative;
+    left: 775px;
+}
+
+@media screen and (max-width: 1440px) and ( min-width: 930px ) {
+    section {
+        width: 80%;
+        height: 100%;
+    }
+
+    .img-hero, .content {
+        width: 50%;
+        height: 50%;
+        margin: 8% 0 0 4%;
+    }
+}
+
+@media screen and (max-width: 929px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .img-hero,
+    .content {
+        position: relative;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        margin: 3% auto;
+    }
+
+    .alert-body {
+        width: 97%;
+        top: 40%
+    }
+
+    .alert-content {
+        margin-left: 7%;
+    }
+
+    .reset {
+        left: 10%;
+    }
+}
